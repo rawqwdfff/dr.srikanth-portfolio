@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import AppBar from "../components/Appbar";
+import AppBar from "./components/Appbar";
 
 export default function Home() {
   return (

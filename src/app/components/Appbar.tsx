@@ -1,9 +1,13 @@
-// TransparentNavbar.tsx
+"use client";
 
 import { AppBar, Toolbar, Typography } from "@mui/material";
 import React from "react";
 
+import { useRouter } from "next/navigation";
+
 const TransparentNavbar: React.FC = () => {
+  const router = useRouter();
+
   const appBarStyle: React.CSSProperties = {
     backgroundColor: "transparent", // Set the background color to transparent
     boxShadow: "none", // Remove the box shadow
@@ -20,6 +24,7 @@ const TransparentNavbar: React.FC = () => {
             mx: "auto",
             p: 1,
           }}
+          onClick={() => router.push("/experience")}
         >
           Experience
         </Typography>
