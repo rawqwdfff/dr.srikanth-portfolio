@@ -1,23 +1,39 @@
+import Image from "next/image";
 import Appbar from "../components/Appbar";
-import Card_1 from "./card_1";
-import Card_2 from "./card_2";
-import Card_3 from "./card_3";
-import Card_4 from "./card_4";
-import Card_5 from "./card_5";
-import Card_6 from "./card_6";
-import Card_7 from "./card_7";
 
 export default function experience() {
   return (
     <div>
       <Appbar />
-      <Card_1 />
-      <Card_2 />
-      <Card_3 />
-      <Card_4 />
-      <Card_5 />
-      <Card_6 />
-      <Card_7 />
+
+      <div className="flex flex-row border-2 mx-10 mt-10 rounded-2xl">
+        <div className="p-5">
+          {" "}
+          <Image
+            src="/colorado_school_of_mines_logo.jpeg"
+            alt="Colorado_image"
+            width={80}
+            height={80}
+            className=" flex-none rounded-full bg-gray-50"
+          ></Image>
+        </div>
+        <div className="p-5">
+          <h1 className="text-white text-2xl font-semibold font=sans">
+            {" "}
+            Senior Postdoctoral Fellow/ Scientist
+          </h1>
+          <h3 className="mt-1 truncate text-xs leading-5 text-gray-100	">
+            Colorado School of Mines
+          </h3>
+          <h3 className="mt-1 truncate text-xs leading-5 text-gray-100	">
+            Chemical and Biological Engineering Department, Colorado School of
+            Mines, Golden, CO 80401, United States of America.
+          </h3>
+          <p className="mt-1 truncate text-xs leading-5 text-gray-100	">
+            Description
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
